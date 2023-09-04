@@ -5,7 +5,7 @@ using Veri_Yapilari_CS.Liste;
 
 namespace Veri_Yapilari_CS.Heap
 {
-    abstract class Heap<T> : IEnumerable<T> where T : IComparable<T>
+    public abstract class Heap<T> : IEnumerable<T> where T : IComparable<T>
     {
         protected readonly Liste<T> liste = new Liste<T>();
 

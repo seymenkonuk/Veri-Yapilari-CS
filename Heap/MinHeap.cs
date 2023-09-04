@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Veri_Yapilari_CS.Kuyruk;
 
 namespace Veri_Yapilari_CS.Heap
 {
@@ -17,6 +18,11 @@ namespace Veri_Yapilari_CS.Heap
         protected override int Karsilastir(T value1, T value2)
         {
             return value2.CompareTo(value1);
+        }
+
+        public static implicit operator MinHeap<T>(Kuyruk<T> v)
+        {
+            throw new NotImplementedException();
         }
     }
 }
