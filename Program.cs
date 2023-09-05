@@ -34,6 +34,10 @@ namespace Veri_Yapilari_CS
 
             var agac = graph.PrimsAlgorithm(8);
             agac = graph.KruskalsAlgorithm(8);
+            var rotalar = graph.DijkstrasAlgorithm(8);
+            var rota = graph.RotaGoster(3,7);
+            foreach (var item in rota)
+                Console.Write(item+"-");
 
             Console.WriteLine(graph.DepthFirstSearch(8, 5));
             graph.DepthFirstTraversal(8);
