@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Net.WebSockets;
 using Veri_Yapilari_CS.Graph;
 
 namespace Veri_Yapilari_CS
@@ -32,6 +31,9 @@ namespace Veri_Yapilari_CS
             graph.AddEdge(6, 5, 8);
             graph.AddEdge(8, 4, 8);
             graph.AddEdge(2, 5, 1);
+
+            var agac = graph.PrimsAlgorithm(8);
+            agac = graph.KruskalsAlgorithm(8);
 
             Console.WriteLine(graph.DepthFirstSearch(8, 5));
             graph.DepthFirstTraversal(8);

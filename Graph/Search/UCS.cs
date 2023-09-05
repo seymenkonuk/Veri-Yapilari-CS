@@ -48,7 +48,9 @@ namespace Veri_Yapilari_CS.Graph
 
                 // Kenarlarını Minheape Ekle
                 foreach (var vertex in Vertices[currentKey].OutEdges)
-                { 
+                {
+                    if (visited.Contains(vertex.Key.Key)) continue;
+
                     var newEdge = new Edge(vertex.Key.Key, currentWeight + vertex.Value);
                     minHeap.Add(newEdge);
                 }
